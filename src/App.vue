@@ -32,18 +32,6 @@ export default {
             return this.$store.getters.isInitialized;
         }
     },
-    methods: {
-        appInit: function(){
-            //console.log('The app is ready to go');
-            //this.$eventHub.$emit('changedCity');
-            //console.log('-----------------------------');
-            //this.$eventHub.$emit('changedDay');
-        },
-    },
-    mounted: function(){
-        //this.$store.dispatch('init');
-        //this.$eventHub.$emit('init');
-    }
 };
 </script>
 
