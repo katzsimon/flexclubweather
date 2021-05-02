@@ -15,7 +15,7 @@
 
         <div class="temperature">
             <div class="bold">{{ temperature_current }} C</div>
-            <div>Min {{ temperature_min }} / Max {{ temperature_max }}</div>
+            <div class="minmax">Min {{ temperature_min }} / Max {{ temperature_max }}</div>
         </div>
 
         <div class="description">
@@ -152,9 +152,13 @@ export default {
 .description {
     font-size:0.8rem;
     text-transform: capitalize;
+    font-weight:bold;
 }
 .temperature {
     margin-bottom:1rem;
+}
+.minmax {
+    font-size:0.8rem;
 }
 .bold {
     font-weight:bold;
