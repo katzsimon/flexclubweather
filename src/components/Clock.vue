@@ -8,7 +8,7 @@
 <template>
     <div class="clock">
         <div>
-            Current Time in {{ displayCity }}: <span class="bold">{{ date }} {{ displayHour }}:{{ displayMinute }}:{{ displaySecond }}</span>
+            Current Time in {{ displayCity }}: <br class="mobile"><span class="bold">{{ date }} {{ displayHour }}:{{ displayMinute }}:{{ displaySecond }}</span>
         </div>
         <div>
             Noon in {{ displayCity }}: {{ noon }}
@@ -124,7 +124,13 @@ export default {
 .bold {
     font-weight:bold;
 }
+.mobile {
+    display:none;
+}
 @media(max-width:1000px) {
+    .mobile {
+        display:block;
+    }
     .clock {
         flex-direction: column;
     }
